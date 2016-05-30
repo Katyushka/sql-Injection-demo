@@ -1,0 +1,5 @@
+INSERT INTO users (id, login, password) VALUES (1, 'admin', '$2a$10$kdN43G6b8zic7NDFH/1mWO62RMXFUIQcyHnXYT/L07LQiAoaOVZra');
+INSERT INTO users (id, login, password) VALUES (2, 'user', '$2a$10$OotQJrfFaEERZbNky/oXKeHxTobYRcia9xCiIBpGYp0Zb6V8Uui3e');
+INSERT INTO users (id, login, password) VALUES (3, 'kate', '$2a$10$kdN43G6b8zic7NDFH/1mWO62RMXFUIQcyHnXYT/L07LQiAoaOVZra');
+INSERT INTO users (id, login, password) VALUES (4, 'vasya', '$2a$10$OotQJrfFaEERZbNky/oXKeHxTobYRcia9xCiIBpGYp0Zb6V8Uui3e');
+INSERT INTO users (id, login, password) VALUES (5, 'yuliya', '$2a$10$OotQJrfFaEERZbNky/oXKeHxTobYRcia9xCiIBpGYp0Zb6V8Uui3e');
