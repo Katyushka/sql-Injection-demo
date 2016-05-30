@@ -19,6 +19,11 @@ public class IndexController {
     private static final Logger log = LoggerFactory.getLogger(IndexController.class);
 
 
+    @RequestMapping("/")
+    public String getHomePage(Model model) {
+        return "index";
+    }
+
     @RequestMapping(value = "/index", method = RequestMethod.POST, params = {"enter"})
     public String generatingTable(Model model) {
 
