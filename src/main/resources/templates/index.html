@@ -9,14 +9,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form th:action="@{/index}" action="/index" th:method="POST">
-<div class="form-group">
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" id="name" required="required" th:field="*{login}"/>
-</div>
 
+<div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+    <h1>Lab 5: XSS</h1>
+    <hr/>
+<form th:action="@{/index}" action="/index" th:object="${form}" th:method="POST">
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required="required" th:field="*{login}"/>
 
-<button class="form-control btn btn-success" name="enter" type="submit">Войти</button>
+            </div>
+        </div>
+    </div>
+    <button class="form-control btn btn-success" name="enter" type="submit">Войти</button>
 </form>
+
+</div>
 </body>
 </html>
