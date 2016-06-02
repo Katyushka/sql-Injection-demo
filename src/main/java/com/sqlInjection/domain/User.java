@@ -21,9 +21,6 @@ public class User {
     @Column(nullable = false)
     private String login;
 
-    @Column(nullable = false)
-    private String password;
-
 
     public Long getId() {
         return id;
@@ -41,11 +38,4 @@ public class User {
         this.login = login;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
